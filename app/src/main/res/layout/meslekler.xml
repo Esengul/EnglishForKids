@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/dinleme_butonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dinleme"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/meslekler"
+        android:layout_alignEnd="@+id/meslekler" />
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/meslekler"
+        android:src="@drawable/doktor"
+        app:siBorderWidth="3dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_above="@+id/txt_meslekler"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:id="@+id/txt_meslekler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="DOCTOR"
+        android:textColor="#EA80FC"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/buton_geri"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buton_geri"
+        android:src="@drawable/gerii"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buton_ileri"
+        android:layout_toStartOf="@+id/buton_ileri"
+        android:layout_marginRight="47dp"
+        android:layout_marginEnd="47dp" />
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buton_ileri"
+        android:src="@drawable/ileri"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_below="@+id/txt_meslekler"
+        android:layout_toLeftOf="@+id/dinleme_butonu"
+        android:layout_toStartOf="@+id/dinleme_butonu"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+
+
+
+
+</RelativeLayout>

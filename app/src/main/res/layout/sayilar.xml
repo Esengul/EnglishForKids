@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/dinlemebutonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dinleme"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sayibir"
+        android:src="@drawable/bir"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/dinlemebutonu"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:id="@+id/sayilar_bir"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="ONE"
+        android:textStyle="bold"
+        android:textColor="#EA80FC"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/sayibir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/geributonu"
+        android:src="@drawable/gerii"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/sayilar_bir"
+        android:layout_alignEnd="@+id/sayilar_bir" />
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ileributonu"
+        android:src="@drawable/ileri"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_alignTop="@+id/geributonu"
+        android:layout_alignRight="@+id/sayibir"
+        android:layout_alignEnd="@+id/sayibir"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+</RelativeLayout>

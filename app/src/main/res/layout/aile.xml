@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/dinleme_butonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dinleme"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/aile"
+        android:layout_alignEnd="@+id/aile" />
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aile"
+        android:src="@drawable/anne"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginBottom="39dp"
+        android:layout_above="@+id/txt_aile"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/txt_aile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="MOTHER"
+        android:textColor="#EA80FC"
+        android:layout_above="@+id/ileributonu_aile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/geributonu_aile"
+        android:src="@drawable/gerii"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginBottom="13dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ileributonu_aile"
+        android:layout_toStartOf="@+id/ileributonu_aile" />
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ileributonu_aile"
+        android:src="@drawable/ileri"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_alignTop="@+id/geributonu_aile"
+        android:layout_toLeftOf="@+id/dinleme_butonu"
+        android:layout_toStartOf="@+id/dinleme_butonu"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+
+
+</RelativeLayout>

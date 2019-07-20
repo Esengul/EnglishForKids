@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dinlemebutonu"
+        app:srcCompat="@drawable/dinleme"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/renkbalonlari"
+        android:src="@drawable/red"
+        app:siBorderWidth="3dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/dinlemebutonu"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_renk"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="RED"
+        android:textColor="#EA80FC"
+        android:layout_below="@+id/renkbalonlari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/balongeri"
+        android:src="@drawable/gerii"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/renkbalonlari"
+        android:layout_alignStart="@+id/renkbalonlari" />
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/balonileri"
+        android:src="@drawable/ileri"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_alignTop="@+id/balongeri"
+        android:layout_alignRight="@+id/renkbalonlari"
+        android:layout_alignEnd="@+id/renkbalonlari" />
+
+
+</RelativeLayout>

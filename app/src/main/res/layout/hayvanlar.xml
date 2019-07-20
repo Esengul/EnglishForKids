@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/buton_dinleme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dinleme"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageview_hayvan"
+        android:layout_alignEnd="@+id/imageview_hayvan" />
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageview_hayvan"
+        android:src="@drawable/kopek"
+        app:siBorderWidth="3dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buton_dinleme"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txt_hayvanlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="DOG"
+        android:textColor="#EA80FC"
+        android:layout_below="@+id/imageview_hayvan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/geributonu_hayvanlar"
+        android:src="@drawable/gerii"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ileributonu_hayvanlar"
+        android:layout_toStartOf="@+id/ileributonu_hayvanlar"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ileributonu_hayvanlar"
+        android:src="@drawable/ileri"
+        app:siBorderWidth="2dp"
+        app:siBorderColor="#ffaeb9"
+        android:layout_alignTop="@+id/geributonu_hayvanlar"
+        android:layout_toLeftOf="@+id/buton_dinleme"
+        android:layout_toStartOf="@+id/buton_dinleme"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp" />
+
+
+
+
+
+</RelativeLayout>
