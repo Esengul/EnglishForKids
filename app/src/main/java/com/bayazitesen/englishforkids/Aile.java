@@ -9,11 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.github.siyamed.shapeimageview.ShapeImageView;
-
 import java.util.HashMap;
-
 
 public class Aile extends AppCompatActivity  implements TextToSpeech.OnInitListener, TextToSpeech.OnUtteranceCompletedListener  {
 
@@ -100,7 +97,6 @@ public class Aile extends AppCompatActivity  implements TextToSpeech.OnInitListe
                                        });
                                    }
                                });
-
                            }
                        });
                        ileri_butonu.setOnClickListener(new View.OnClickListener() {
@@ -132,10 +128,8 @@ public class Aile extends AppCompatActivity  implements TextToSpeech.OnInitListe
                                                        });
                                                    }
                                                });
-
                                            }
                                        });
-
                                    }
                                });
                                ileri_butonu.setOnClickListener(new View.OnClickListener() {
@@ -172,13 +166,10 @@ public class Aile extends AppCompatActivity  implements TextToSpeech.OnInitListe
                                                                        });
                                                                    }
                                                                });
-
                                                            }
                                                        });
-
                                                    }
                                                });
-
                                            }
                                        });
                                        ileri_butonu.setOnClickListener(new View.OnClickListener() {
@@ -220,17 +211,12 @@ public class Aile extends AppCompatActivity  implements TextToSpeech.OnInitListe
                                                                                        });
                                                                                    }
                                                                                });
-
                                                                            }
                                                                        });
-
                                                                    }
                                                                });
-
                                                            }
                                                        });
-
-
                                                    }
                                                });
                                                ileri_butonu.setOnClickListener(new View.OnClickListener() {
@@ -277,21 +263,14 @@ public class Aile extends AppCompatActivity  implements TextToSpeech.OnInitListe
                                                                                                        });
                                                                                                    }
                                                                                                });
-
                                                                                            }
                                                                                        });
-
                                                                                    }
                                                                                });
-
                                                                            }
                                                                        });
-
-
                                                                    }
                                                                });
-
-
                                                            }
                                                        });
                                                        ileri_butonu.setOnClickListener(new View.OnClickListener() {
@@ -359,22 +338,14 @@ public class Aile extends AppCompatActivity  implements TextToSpeech.OnInitListe
 
                                                                                            }
                                                                                        });
-
-
                                                                                    }
                                                                                });
-
-
                                                                            }
                                                                        });
-
-
-
                                                                    }
                                                                });
                                                            }
                                                        });
-
                                                    }
                                                });
                                            }
